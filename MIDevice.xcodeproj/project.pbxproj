@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		48258FCD23435B1100DAA42B /* MIDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 48258FCB23435B1100DAA42B /* MIDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48258FD423435BAA00DAA42B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48258FD323435BAA00DAA42B /* Device.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48258FC823435B1100DAA42B /* MIDevice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MIDevice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48258FCB23435B1100DAA42B /* MIDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MIDevice.h; sourceTree = "<group>"; };
 		48258FCC23435B1100DAA42B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48258FD323435BAA00DAA42B /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				48258FCB23435B1100DAA42B /* MIDevice.h */,
 				48258FCC23435B1100DAA42B /* Info.plist */,
+				48258FD323435BAA00DAA42B /* Device.swift */,
 			);
 			path = MIDevice;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					48258FC723435B1100DAA42B = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48258FD423435BAA00DAA42B /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		48258FD123435B1100DAA42B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MIDevice;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		48258FD223435B1100DAA42B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
